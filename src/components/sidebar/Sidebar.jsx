@@ -63,7 +63,7 @@ export default function Sidebar() {
               src="/assets/person/2.jpeg"
               alt="broken-image"
             />
-            <span className="sidebar--friendname">Carol Corpuz</span>
+            <span className="sidebar--friendname">Prince Sanguan</span>
           </li>
           <li className="sidebar--friend">
             <img
@@ -71,7 +71,7 @@ export default function Sidebar() {
               src="/assets/person/2.jpeg"
               alt="broken-image"
             />
-            <span className="sidebar--friendname">Carol Corpuz</span>
+            <span className="sidebar--friendname">JohnPaul Aquino</span>
           </li>
           <li className="sidebar--friend">
             <img
@@ -79,7 +79,7 @@ export default function Sidebar() {
               src="/assets/person/2.jpeg"
               alt="broken-image"
             />
-            <span className="sidebar--friendname">Carol Corpuz</span>
+            <span className="sidebar--friendname">Vic Sotto</span>
           </li>
           <li className="sidebar--friend">
             <img
@@ -87,7 +87,7 @@ export default function Sidebar() {
               src="/assets/person/2.jpeg"
               alt="broken-image"
             />
-            <span className="sidebar--friendname">Carol Corpuz</span>
+            <span className="sidebar--friendname">Jordan Clarkson</span>
           </li>
           <li className="sidebar--friend">
             <img
@@ -95,7 +95,7 @@ export default function Sidebar() {
               src="/assets/person/2.jpeg"
               alt="broken-image"
             />
-            <span className="sidebar--friendname">Carol Corpuz</span>
+            <span className="sidebar--friendname">Scottie Thompson</span>
           </li>
         </ul>
       </div>
