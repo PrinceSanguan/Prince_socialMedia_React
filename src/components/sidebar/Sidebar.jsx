@@ -11,6 +11,8 @@ import {
   Event,
   School,
 } from "@mui/icons-material";
+import { Users } from "../../DummyCredential";
+import CloseFriend from "../closeFriend/CloseFriend";
 
 export default function Sidebar() {
   return (
@@ -57,46 +59,9 @@ export default function Sidebar() {
         <button className="sidebar--button">Show More</button>
         <hr className="sidebar--hr" />
         <ul className="sidebar--friendlist">
-          <li className="sidebar--friend">
-            <img
-              className="sidebar--friendimg"
-              src="/assets/person/2.jpeg"
-              alt="broken-image"
-            />
-            <span className="sidebar--friendname">Prince Sanguan</span>
-          </li>
-          <li className="sidebar--friend">
-            <img
-              className="sidebar--friendimg"
-              src="/assets/person/2.jpeg"
-              alt="broken-image"
-            />
-            <span className="sidebar--friendname">JohnPaul Aquino</span>
-          </li>
-          <li className="sidebar--friend">
-            <img
-              className="sidebar--friendimg"
-              src="/assets/person/2.jpeg"
-              alt="broken-image"
-            />
-            <span className="sidebar--friendname">Vic Sotto</span>
-          </li>
-          <li className="sidebar--friend">
-            <img
-              className="sidebar--friendimg"
-              src="/assets/person/2.jpeg"
-              alt="broken-image"
-            />
-            <span className="sidebar--friendname">Jordan Clarkson</span>
-          </li>
-          <li className="sidebar--friend">
-            <img
-              className="sidebar--friendimg"
-              src="/assets/person/2.jpeg"
-              alt="broken-image"
-            />
-            <span className="sidebar--friendname">Scottie Thompson</span>
-          </li>
+          {Users.map((u) => (
+            <CloseFriend key={u.id} user={u} />
+          ))}
         </ul>
       </div>
     </div>

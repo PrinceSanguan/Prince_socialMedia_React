@@ -1,5 +1,7 @@
 import React from "react";
 import "./rightbar.css";
+import { Users } from "../../DummyCredential";
+import Online from "../online/Online";
 
 export default function Rightbar() {
   return (
@@ -23,83 +25,9 @@ export default function Rightbar() {
         />
         <h4 className="rightbar--title">Online Friends</h4>
         <ul className="rightbar--friendlist">
-          <li className="rightbar--friend">
-            <div className="rightbar--profileimgcontainer">
-              <img
-                className="rightbar--profileimg"
-                src="/assets/person/3.jpeg"
-                alt="broken-image"
-              />
-              <span className="rightbar--online"></span>
-            </div>
-            <span className="rightbar--username">John Cena</span>
-          </li>
-          <li className="rightbar--friend">
-            <div className="rightbar--profileimgcontainer">
-              <img
-                className="rightbar--profileimg"
-                src="/assets/person/3.jpeg"
-                alt="broken-image"
-              />
-              <span className="rightbar--online"></span>
-            </div>
-            <span className="rightbar--username">John Cena</span>
-          </li>
-          <li className="rightbar--friend">
-            <div className="rightbar--profileimgcontainer">
-              <img
-                className="rightbar--profileimg"
-                src="/assets/person/3.jpeg"
-                alt="broken-image"
-              />
-              <span className="rightbar--online"></span>
-            </div>
-            <span className="rightbar--username">John Cena</span>
-          </li>
-          <li className="rightbar--friend">
-            <div className="rightbar--profileimgcontainer">
-              <img
-                className="rightbar--profileimg"
-                src="/assets/person/3.jpeg"
-                alt="broken-image"
-              />
-              <span className="rightbar--online"></span>
-            </div>
-            <span className="rightbar--username">John Cena</span>
-          </li>
-          <li className="rightbar--friend">
-            <div className="rightbar--profileimgcontainer">
-              <img
-                className="rightbar--profileimg"
-                src="/assets/person/3.jpeg"
-                alt="broken-image"
-              />
-              <span className="rightbar--online"></span>
-            </div>
-            <span className="rightbar--username">John Cena</span>
-          </li>
-          <li className="rightbar--friend">
-            <div className="rightbar--profileimgcontainer">
-              <img
-                className="rightbar--profileimg"
-                src="/assets/person/3.jpeg"
-                alt="broken-image"
-              />
-              <span className="rightbar--online"></span>
-            </div>
-            <span className="rightbar--username">John Cena</span>
-          </li>
-          <li className="rightbar--friend">
-            <div className="rightbar--profileimgcontainer">
-              <img
-                className="rightbar--profileimg"
-                src="/assets/person/3.jpeg"
-                alt="broken-image"
-              />
-              <span className="rightbar--online"></span>
-            </div>
-            <span className="rightbar--username">John Cena</span>
-          </li>
+          {Users.map((u) => (
+            <Online key={u.id} user={u} />
+          ))}
         </ul>
       </div>
     </div>
