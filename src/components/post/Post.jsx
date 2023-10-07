@@ -5,10 +5,11 @@ import { Users } from "../../DummyCredential";
 
 export default function Post({ post }) {
   const [like, setLike] = useState(post.like);
-  const [isliked, setIsliked] = useState(false);
+  const [isLiked, setIsliked] = useState(false);
 
   const likeHandler = () => {
-    setLike(isliked ? like - 1 : like + 1);
+    setLike(isLiked ? like - 1 : like + 1);
+    setIsliked(!isLiked);
   };
 
   return (
